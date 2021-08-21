@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">
+            Cash Register Manager
+        </h1>
+        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to
+            return</p>
+
+        <!-- for in label and id in input. 
+                for tell for which input it is for.
+                for in label is conneting to the input via it's id.
+
+                Telling the browser that this label is for this input.
+        -->
+        <label for="bill-amount">Bill Amount</label>
+        <input id="bill-amount" type="number">
+
+        <button id="next-btn" type="submit"> Next </button>
+        <p id="message"></p>
+
+        <div class="register">
+
+            <label for="cash-given">Cash Given</label>
+            <input id="cash-given" type="number">
+
+            <button id="check-btn" type="submit"> Check </button>
+            <p id="error-message"></p>
+
+            <table class="change-table">
+                <caption id="table-title">Return Change</caption>
+                <!-- table row -->
+                <tr>
+                    <!--table row header-->
+                    <th>No. of Notes</th>
+                    <!-- table row data -->
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+
+                <tr>
+                    <!-- table row header -->
+                    <th>Note</th>
+
+                    <!-- table row data -->
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
