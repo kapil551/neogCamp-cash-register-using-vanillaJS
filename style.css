@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,600&display=swap');
+
+
 * {
-    /* margin: 0;
+    margin: 0;
     padding: 0;
 
-    box-sizing: border-box; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* container */
 .container {
 
     border: 1px solid blue;
@@ -13,34 +18,85 @@
     flex-direction: column;
     width: 50vw;
 
+    margin: 2rem auto;
+
+    padding: 1rem;
+
 }
 
+/* container heading */
 .container .heading {
 
     border: 1px solid pink;
 
 }
 
+/* container description */
 .container .description {
 
     border: 1px solid red;
 
 }
 
+/* label ==> Bill Amount*/
+.container .bill-amount-label {
+
+}
+
+/* input ==> Bill Amount */
+.container #bill-amount {
+
+}
+
+/* next button */
+.container #next-btn {
+
+}
+
+/* Bill Amount error message */
+.container #message {
+
+}
+
+/* register div */
 .container .register {
     border: 1px solid gray;
 
     display: none;
-    flex-direction: column;
+    flex-direction: column;  
 }
 
-.container #table-title {
+/* label ==> Cash Given */
+.register .cash-given-label {
+
+}
+
+/* input ==> Cash Given */
+.register #cash-given {
+
+}
+
+/* check button */
+.register #check-btn {
+
+}
+
+/* cash given error message */
+.register #error-message {
+
+}
+
+/* table title ==> caption */
+.register #table-title {
 
     border: 1px solid purple;
 }
-.container .change-table {
+
+/* table */
+.register .change-table {
 
     border: 1px solid green;
+    
    
 
 }

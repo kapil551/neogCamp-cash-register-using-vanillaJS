@@ -52,6 +52,15 @@ function hideErrorMessage() {
 
 }
 
+// handler for hiding the table row of no. of notes
+function hideTableRowNoOfNotes() {
+
+    for(let i=0;i<tableNoOfNotes.length; i++) {
+
+        tableNoOfNotes[i].style.display = "none";
+    }
+}
+
 // handler for next button
 function nextButtonHandler() {
 
@@ -96,6 +105,9 @@ function calculateAmountChange(amountChange) {
         console.log("amountChange", amountChange);
         
         // update the no. of notes in the view ==> In the table row data
+
+        // Set the display ==> (table-cell)	Let the element behave like a <td> element
+        tableNoOfNotes[idx].style.display = "table-cell";
         tableNoOfNotes[idx].innerText = Math.trunc(numberOfNotes);
     }
 
@@ -114,7 +126,10 @@ function checkButtonHandler() {
     let cash = cashGiven.value;
     console.log(cash);
 
+    // Resetting:
     hideErrorMessage(); // Hide the message initially
+    // hide the table row of no. of notes initially
+    hideTableRowNoOfNotes();
 
     // 1: Validate the bill amount ==> Check whether it is greater than zero or not?
     if (bill > 0) {
