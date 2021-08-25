@@ -12,7 +12,9 @@
 /* container */
 .container {
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    background-color: #DBEAFE;
+    border-radius: 0.7rem;
 
     display: flex;
     flex-direction: column;
@@ -27,54 +29,80 @@
 /* container heading */
 .container .heading {
 
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
+    text-align: center;
+    margin-bottom: 3rem;
 
 }
 
 /* container description */
 .container .description {
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-bottom: 1.5rem;
 
 }
 
 /* label ==> Bill Amount*/
 .container .bill-amount-label {
 
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 /* input ==> Bill Amount */
 .container #bill-amount {
 
+    height: 4.5vh;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* next button */
 .container #next-btn {
 
     cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    border-radius: 0.5rem;
 
 }
 
 /* Bill Amount error message */
 .container #message {
 
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 /* register div */
 .container .register {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 
     display: none;
-    flex-direction: column;  
+    flex-direction: column;
+
 }
 
 /* label ==> Cash Given */
 .register .cash-given-label {
 
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 /* input ==> Cash Given */
 .register #cash-given {
+
+    height: 4.5vh;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -82,25 +110,41 @@
 .register #check-btn {
 
     cursor: pointer;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+
+    border-radius: 0.5rem;
 
 }
 
 /* cash given error message */
 .register #error-message {
 
+    text-align: center;
+    margin-bottom: 0.5rem;
+
 }
 
 /* table title ==> caption */
 .register #table-title {
 
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
 }
 
 /* table */
 .register .change-table {
 
-    border: 1px solid green;
-    
-   
+    /* border: 1px solid green; */
+
+    background-color: #2563EB;
+    color: black;
+    padding: 0.5rem 1rem; 
+
+    border-radius: 0.6rem;
 
 }

@@ -1,35 +1,35 @@
 // 1. Input ==>
 // get the input bill amount
 const billAmount = document.querySelector("#bill-amount");
-console.log(billAmount);
+// console.log(billAmount);
 
 // get the input cash given
 const cashGiven = document.querySelector("#cash-given");
-console.log(cashGiven);
+// console.log(cashGiven);
 
 // get the check button
 const checkButton = document.querySelector("#check-btn");
-console.log(checkButton);
+// console.log(checkButton);
 
 // get the error-message paragraph
 const errorMessage = document.querySelector("#error-message");
-console.log(errorMessage);
+// console.log(errorMessage);
 
 // get all the table row data
 const tableNoOfNotes = document.querySelectorAll(".no-of-notes") ;
-console.log(tableNoOfNotes);
+// console.log(tableNoOfNotes);
 
 //get the next button
 const nextButton = document.querySelector("#next-btn");
-console.log(nextButton);
+// console.log(nextButton);
 
 // get the register div
 const registerDiv = document.querySelector(".register");
-console.log(registerDiv);
+// console.log(registerDiv);
 
 // get the message paragraph
 const message = document.querySelector("#message");
-console.log(message);
+// console.log(message);
 
 // currency notes available
 const currencyNotes = [2000, 500, 100, 20, 10, 5, 1];
@@ -64,7 +64,7 @@ function hideTableRowNoOfNotes() {
 // handler for next button
 function nextButtonHandler() {
 
-    console.log("next button is clicked");
+    // console.log("next button is clicked");
 
     message.style.display = "none";
     
@@ -102,7 +102,7 @@ function calculateAmountChange(amountChange) {
 
         // update the remaining change amount
         amountChange = amountChange % note;
-        console.log("amountChange", amountChange);
+        // console.log("amountChange", amountChange);
         
         // update the no. of notes in the view ==> In the table row data
 
@@ -116,7 +116,7 @@ function calculateAmountChange(amountChange) {
 // handler for the checkButton
 function checkButtonHandler() {
 
-    console.log("check button is clicked");
+    // console.log("check button is clicked");
 
     // get the input value of the bill amount 
     let bill = billAmount.value;
@@ -139,7 +139,7 @@ function checkButtonHandler() {
 
             //calculate the change cash
             const amountChange = cash - bill;
-            console.log("amountChange:", amountChange);
+            // console.log("amountChange:", amountChange);
             calculateAmountChange(amountChange);
 
         } else {
